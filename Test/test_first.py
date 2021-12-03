@@ -24,6 +24,8 @@ class TestLogin(BaseClass):
 
         error = WebDriverWait(self.driver, 3).until(expected_conditions.presence_of_element_located((By.CSS_SELECTOR, "div[id = 'toast-container']"))).text
 
+        print("First changes in clone")
+
         assert "Unauthorized" in error
         # self.driver.refresh()
 
