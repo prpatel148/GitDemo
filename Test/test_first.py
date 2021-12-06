@@ -26,6 +26,8 @@ class TestLogin(BaseClass):
 
         print("First changes in clone")
         print("Second changes in clone")
+        print("Third change in clone")
+
 
         assert "Unauthorized" in error
         # self.driver.refresh()
